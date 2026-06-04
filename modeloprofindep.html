@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. María González - Psicología Clínica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(59, 130, 246, 0.8), rgba(37, 99, 235, 0.8)), 
+                        url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200') center/cover;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header / Navegación -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    Dra. María González
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <ul id="nav-menu" class="hidden md:flex space-x-8">
+                    <li><a href="#inicio" class="hover:text-blue-600 transition">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-blue-600 transition">Servicios</a></li>
+                    <li><a href="#sobre-mi" class="hover:text-blue-600 transition">Sobre mí</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-600 transition">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu -->
+            <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <li><a href="#inicio" class="block py-2 hover:text-blue-600 transition">Inicio</a></li>
+                <li><a href="#servicios" class="block py-2 hover:text-blue-600 transition">Servicios</a></li>
+                <li><a href="#sobre-mi" class="block py-2 hover:text-blue-600 transition">Sobre mí</a></li>
+                <li><a href="#contacto" class="block py-2 hover:text-blue-600 transition">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-white mt-16">
+        <div class="text-center px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Atención Psicológica Profesional</h1>
+            <p class="text-xl md:text-2xl mb-8">Acompañamiento personalizado para tu bienestar emocional</p>
+            <a href="#contacto" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition inline-block">
+                Agenda tu cita
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-600">Sobre mí</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400" 
+                         alt="Dra. María González" 
+                         class="rounded-lg shadow-lg w-full max-w-sm mx-auto">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-4">Dra. María González</h3>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Psicóloga Clínica - Cédula Profesional: 12345678
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Licenciada en Psicología por la Universidad Nacional con especialización en Terapia Cognitivo-Conductual. 
+                        Cuento con más de 10 años de experiencia ayudando a personas a superar ansiedad, depresión, 
+                        problemas de pareja y dificultades emocionales.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Mi enfoque terapéutico es cálido, empático y basado en evidencia científica. Creo firmemente en el 
+                        potencial de cada persona para crecer y transformar su vida.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                            <span>+10 años de experiencia</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                            <span>500+ pacientes atendidos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                            <span>Certificación Internacional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-600">Servicios</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Terapia Individual</h3>
+                    <p class="text-gray-600">
+                        Sesiones personalizadas para tratar ansiedad, depresión, estrés y otros desafíos emocionales con técnicas probadas.
+                    </p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Terapia de Pareja</h3>
+                    <p class="text-gray-600">
+                        Fortalece tu relación, mejora la comunicación y resuelve conflictos en un espacio seguro y profesional.
+                    </p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Terapia Familiar</h3>
+                    <p class="text-gray-600">
+                        Ayuda a tu familia a mejorar la convivencia, resolver conflictos y construir relaciones más saludables.
+                    </p>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Psicología Infantil</h3>
+                    <p class="text-gray-600">
+                        Atención especializada para niños y adolescentes con dificultades emocionales, conductuales o de aprendizaje.
+                    </p>
+                </div>
+                <!-- Servicio 5 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sesiones Online</h3>
+                    <p class="text-gray-600">
+                        Consultas por videollamada con la misma calidad y profesionalismo desde la comodidad de tu hogar.
+                    </p>
+                </div>
+                <!-- Servicio 6 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Evaluación Psicológica</h3>
+                    <p class="text-gray-600">
+                        Evaluaciones completas para diagnóstico y orientación en procesos terapéuticos o educativos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-20 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-600">Testimonios</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "La Dra. González me ayudó a superar mi ansiedad de forma profesional y empática. 
+                        Sus técnicas realmente funcionan y ahora tengo herramientas para manejar mis emociones."
+                    </p>
+                    <p class="font-semibold">- Ana Martínez</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Excelente profesional. La terapia de pareja nos salvó de una crisis y ahora nuestra 
+                        relación es más fuerte que nunca. Totalmente recomendada."
+                    </p>
+                    <p class="font-semibold">- Carlos y Laura Pérez</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Mi hijo mejoró muchísimo con su atención. Es paciente, profesional y tiene un 
+                        don especial para conectar con los niños. Estamos muy agradecidos."
+                    </p>
+                    <p class="font-semibold">- Patricia Rodríguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-600">Contacto</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Información de contacto -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Dirección</p>
+                                <p class="text-gray-600">Av. Principal 123, Piso 3, Oficina 301<br>Ciudad, País</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Teléfono</p>
+                                <p class="text-gray-600">+591 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-600">contacto@mariagonzalez.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Horario de Atención</p>
+                                <p class="text-gray-600">Lunes a Viernes: 9:00 AM - 7:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/591123456789?text=Hola,%20me%20gustaría%20agendar%20una%20cita" 
+                       target="_blank"
+                       class="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-600 transition inline-flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-2xl"></i>
+                        Agendar cita por WhatsApp
+                    </a>
+                </div>
+                <!-- Formulario -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Envíame un mensaje</h3>
+                    <form id="contact-form" action="https://formsubmit.co/tu-email@ejemplo.com" method="POST" class="space-y-4">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde la web">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nombre completo</label>
+                            <input type="text" 
+                                   name="nombre" 
+                                   required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Correo electrónico</label>
+                            <input type="email" 
+                                   name="email" 
+                                   required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+                            <textarea name="mensaje" 
+                                      rows="5" 
+                                      required
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2025 Dra. María González. Todos los derechos reservados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://facebook.com" target="_blank" class="hover:text-blue-400 transition">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="hover:text-pink-400 transition">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-blue-300 transition">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-blue-400 transition">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for all navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80; // Height of fixed header
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Change header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
