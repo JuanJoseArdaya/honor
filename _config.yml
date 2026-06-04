@@ -1,0 +1,12 @@
+title: Delicias Artesanales
+email: hola@deliciasartesanales.bo
+description: Sitio web de repostería artesanal hecho con amor.
+baseurl: "/honor"
+url: "https://JuanJoseArdaya.github.io"
+theme: jekyll-theme-cayman
+markdown: kramdown
+exclude:
+  - README.md
+  - modeloprofindep.html
+  - index/index.html
+  - mapogo/index.html
